@@ -35,7 +35,7 @@ public class RegisterMember extends HttpServlet {
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		String file_repo_path = "C:\\Users\\19-web-ksm\\git\\15_jsp_mvc2\\15_jsp_mvc2\\WebContent\\step02_memberEx\\memberImg";
+		String file_repo_path = "C:\\Users\\19-web-ksm\\git\\15_jsp_mvc2\\15_jsp_mvc2\\WebContent\\step02_memberEx\\memberImg\\";
 		MultipartRequest multi = new MultipartRequest(request, file_repo_path , 1024 * 1024 * 30 , "utf-8" , new DefaultFileRenamePolicy()); // 파일 업로드
 		
 		MemberDTO memberDTO = new MemberDTO();

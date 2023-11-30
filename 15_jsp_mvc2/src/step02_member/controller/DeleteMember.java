@@ -33,7 +33,7 @@ public class DeleteMember extends HttpServlet {
 		
 		HttpSession session = request.getSession();
 		
-		String file_repo_path = "C:\\Users\\19-web-ksm\\git\\15_jsp_mvc2\\15_jsp_mvc2\\WebContent\\step02_memberEx\\memberImg";
+		String file_repo_path = "C:\\Users\\19-web-ksm\\git\\15_jsp_mvc2\\15_jsp_mvc2\\WebContent\\step02_memberEx\\memberImg\\";
 		
 		String imgNm = MemberDAO.getInstance().getMemberDetail((String)session.getAttribute("memberId")).getImgNm(); // 삭제하고 싶은 이미지파일 명을 가져옴
 		new File(file_repo_path + imgNm).delete();	// delete메서드를 이용하여 이미지 파일을 삭제
